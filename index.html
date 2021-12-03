@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/addons/p5.sound.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+
+  </head>
+  <body>
+
+    <section id="homeScreen" class="col-12">
+      <div class="container">
+      <div class="row">
+        <h1 class="col-12">Design Avatar</h1></div>
+      <div class="row">
+        <h2 class="col-12">Master the elements of design.</h2></div>
+      <div class="row">
+        <div class="col-12"><a id="start1" class="btn btn-primary">Play</a><a id="about-btn" class="btn btn-secondary">How to play</a></div>
+      </div>
+    </div>
+    </section>
+
+
+    <section id="about" class="col-12 hide">
+      <div class="container">
+
+        <h1 class="col-12">How to play</h1>
+
+        <h2 class="col-6">Design principals will display on your screen. Your goal is to guess what design principals are used to increase your score.</h2>
+
+        <div class="col-12"><a id="start2" class="btn btn-primary">Play</a><a id="home-btn" class="btn btn-secondary">Home</a></div>
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="gameContainer" class="col-12 hide">
+      <div class="container">
+        <div class="row header">
+          <div id="scoreContainer" class="score col-6"><p>Score: <score id="scoreCounter">0</score></p></div>
+          <div class="logo col-6" ><a href="index.html"><p>Design Avatar</p></a></div>
+        </div>  
+
+
+
+
+        <div id="game" class="row game">
+          <div class="col-6 gameGraphicContainer">
+            <img src="color.svg" id="qImg">
+            </div>
+          <div  class="col-6 row">
+            <div id="answerContrainer" ></div>
+            <div><button id="next" class="btn">Next</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <section id="results" class="hide">
+      <div class="container">
+        <div class="row">
+        <h1 id="endGameMessage">Game Over!</h1>
+        <p class="resultMessage">Your score is: <score id="scoreResult">0</score></p>
+        <div class="row">
+          <div class="col-12"><a id="restartBtn" class="btn btn-primary">Play again</a><a href="index.html" class="btn btn-secondary">Home</a></div>
+        </div>
+    </section>
+
+
+
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
